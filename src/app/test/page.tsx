@@ -4,11 +4,6 @@ import { MRT_ColumnDef, MaterialReactTable, useMaterialReactTable } from "materi
 import { ClipboardEvent, useMemo } from "react"
 
 
-interface PlainSchema {
-    '0': string;
-    '1': string;
-}
-
 export default function Home() {
     const columns = useMemo(() => new Array(3).fill(0).map((_, i) => {
         return {
